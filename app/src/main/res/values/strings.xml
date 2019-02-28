@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Carteira de Clientes</string>
+    <string name="app_name">Clientes</string>
+    <string name="title_activity_act_main">Clientes</string>
+    <string name="title_activity_act_card_cliente">Cliente</string>
 </resources>
