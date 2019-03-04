@@ -9,7 +9,7 @@
     tools:showIn="@layout/act_main">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/IstDados"
+        android:id="@+id/lstDados"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -21,5 +21,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:listitem="@layout/recycler_view_item_2" />
+        tools:listitem="@layout/recycler_view_item" />
 </android.support.constraint.ConstraintLayout>
