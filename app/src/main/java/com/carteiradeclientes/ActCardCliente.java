@@ -1,15 +1,20 @@
 package com.carteiradeclientes;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.widget.EditText;
 
 public class ActCardCliente extends AppCompatActivity {
 
-    private  FloatingActionButton fab;
+    private EditText editNome;
+    private EditText editEndereco;
+    private EditText editTelefone;
+    private EditText editEmail;
 
 
     @Override
@@ -19,14 +24,18 @@ public class ActCardCliente extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        editNome     = (EditText)findViewById(R.id.editNome);
+        editEndereco = (EditText)findViewById(R.id.editEndereco);
+        editTelefone = (EditText)findViewById(R.id.editTelefone);
+        editEmail    = (EditText)findViewById(R.id.editEmail);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_act_card_cliente, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
 }
